@@ -1,0 +1,147 @@
+div /* 樣式對象 */
+{ /* 樣式內容必須放左右大括弧內 */
+    color: #ff00625e; /*文字顏色 */
+}
+
+body
+{
+    /* 背景顏色 */ 
+    background-color: #72c2d4c6;
+    color: #23619b;
+}
+
+h1
+{
+    font-size: 26px;
+    /* 文字大小，使用的單位是固定數值得像素px，固定數值是讓每個裝置看到的大小都是一樣的 */
+    color:  #35989d;
+    border-style: solid; /* 邊框樣式:實線邊框 */
+    border-width: 3px; /* 邊框粗細 */
+    background-color: #ffffff;
+    border-radius: 50px; /* 圓角邊框:1個數字代表4個邊都是相同的 */ 
+    /* border-radius: 10px;  圓角邊框:2個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下 */ 
+    /* border-radius: 10px 0 30px;  圓角邊框:3個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下,第3個數字代表右下 */ 
+    /* border-radius: 10px 0 30px 50px; 圓角邊框:4個數字從左上開始,順時針依序設定右上.右下.左下 */
+    text-align: center; /* 文字是內行元素,要讓它左右置中,可以在父元素設定文字對齊方式:置中 */
+    width: 200px; /* 固定寬度,內容如果過寬度,寬度不會自動延伸 */
+    margin: 50px auto; /* 外距,只有一個數字代表四邊的外距都是相同的,2個數字時,第1個代表上下,第2個數字代表左右 */
+
+}
+
+h2
+{
+color:  #35989d;
+font-size: 20px;
+text-align: center;
+}
+
+
+p
+{
+    font-size: 25px;
+    color:  #35989d;
+    text-align: center;
+    /* 沒有指定邊顏色,就會使用和文字一樣的顏色 */
+    padding-bottom: 10px; /* 下外距,只又一個間距要設定,就可以直接指定想要的位置,top是上,left是左,right是右 */
+    width: 123px;
+    margin: 0 auto;
+}
+
+a
+{
+    text-decoration: none;
+    /* 文字裝飾:不要有底線就選擇none,任何裝飾都沒有,要底線就選擇underline */
+    text-align: center; /* 文字是內行元素,要讓它左右置中,可以在父元素設定文字對齊方式:置中 */
+     margin: 0 auto;
+}
+
+/* HTML裡面的id名稱在css裡使用#來表示 */
+/* HTML裡面的class名稱在css裡使用.來表示 */
+.link
+{
+    color: #35989d;
+border-style: solid; /* 邊框樣式:實線邊框 */
+border-width: 2px; /* 邊框粗細 */
+background-color: #ffffff;
+border-radius: 50px; /* 圓角邊框:1個數字代表4個邊都是相同的 */ 
+/* border-radius: 10px;  圓角邊框:2個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下 */ 
+/* border-radius: 10px 0 30px;  圓角邊框:3個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下,第3個數字代表右下 */ 
+/* border-radius: 10px 0 30px 50px; 圓角邊框:4個數字從左上開始,順時針依序設定右上.右下.左下 */
+padding: 10px 35px;/* 內距:邊框與內容的距離 */
+box-shadow: 5px 5px;/* 邊框陰影:水平距離 垂直距離 顏色 */
+display: block;/* 行內元素預設左右排列，要改成上下，只要偽裝變成塊狀元素 */
+width: 200px;
+font-size: 20px;
+}
+
+.p1
+{
+    font-size: 20px;
+    color: #35989d;
+    width: 460px;
+    border-bottom-style:double
+}
+.p2
+{
+     font-size: 20px;
+    color: #35989d;
+    width: 460px;
+    border-bottom-style:hidden
+}
+.p3
+{
+     font-size:20px;
+    color: #35989d;
+    width: 460px;
+    border-bottom-style:hidden
+}
+.p4
+{
+     font-size:20px;
+    color: #35989d;
+    width: 460px;
+    border-bottom-style:double
+}
+
+h3
+{
+     font-size:19px;
+    color: #35989d;
+    width: 500px;
+    text-align:center;
+  margin: 0px auto;
+}
+h4
+{
+    font-size: 25px;
+    /* 文字大小，使用的單位是固定數值得像素px，固定數值是讓每個裝置看到的大小都是一樣的 */
+    background-color: #eff5f7;
+    border-style: solid; /* 邊框樣式:實線邊框 */
+    border-width: 2px; /* 邊框粗細 */
+    border-radius: 50px; /* 圓角邊框:1個數字代表4個邊都是相同的 */ 
+    /* border-radius: 10px;  圓角邊框:2個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下 */ 
+    /* border-radius: 10px 0 30px;  圓角邊框:3個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下,第3個數字代表右下 */ 
+    /* border-radius: 10px 0 30px 50px; 圓角邊框:4個數字從左上開始,順時針依序設定右上.右下.左下 */
+    text-align: center; /* 文字是內行元素,要讓它左右置中,可以在父元素設定文字對齊方式:置中 */
+    width: 80%; /* 固定寬度,內容如果過寬度,寬度不會自動延伸 */
+    margin:10px auto; /* 外距,只有一個數字代表四邊的外距都是相同的,2個數字時,第1個代表上下,第2個數字代表左右 */
+max-width: 500px;
+    color: #35989d;
+    width: 460px;
+    display: block;
+
+  
+}
+
+h5
+{
+   font-size:19px;
+    color: #35989d;
+    width: 460px;
+    text-align:center;
+    display: block;
+ border-bottom-width: 5px;
+  margin: 10px auto;
+
+
+}

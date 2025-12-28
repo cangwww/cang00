@@ -1,0 +1,115 @@
+div /* 樣式對象 */
+{ /* 樣式內容必須放左右大括弧內 */
+    color: #ff00625e; /*文字顏色 */
+}
+
+body
+{
+    /* 背景顏色 */ 
+    background-color: #a3d6e9;
+}
+
+h1
+{
+    font-size: 26px;
+    /* 文字大小，使用的單位是固定數值得像素px，固定數值是讓每個裝置看到的大小都是一樣的 */
+    color: #109ac0;
+    background-color: #eff5f7;
+    border-style: solid; /* 邊框樣式:實線邊框 */
+    border-width: 2px; /* 邊框粗細 */
+    border-radius: 50px; /* 圓角邊框:1個數字代表4個邊都是相同的 */ 
+    /* border-radius: 10px;  圓角邊框:2個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下 */ 
+    /* border-radius: 10px 0 30px;  圓角邊框:3個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下,第3個數字代表右下 */ 
+    /* border-radius: 10px 0 30px 50px; 圓角邊框:4個數字從左上開始,順時針依序設定右上.右下.左下 */
+    text-align: center; /* 文字是內行元素,要讓它左右置中,可以在父元素設定文字對齊方式:置中 */
+    width: 80%; /* 固定寬度,內容如果過寬度,寬度不會自動延伸 */
+    margin: 50px auto; /* 外距,只有一個數字代表四邊的外距都是相同的,2個數字時,第1個代表上下,第2個數字代表左右 */
+max-width: 600px;
+/* 最大寬度。固定寬度如果超過寬度，，寬度不會自動延伸 */
+
+}
+h2
+{
+   font-size: 30px;
+    color: #109ac0;
+    text-align: center;
+    border-bottom-style:double; /* 下邊框樣式:點虛線 */
+    border-bottom-width: 2px; /* 下邊框粗細 */
+    /* 沒有指定邊顏色,就會使用和文字一樣的顏色 */
+    padding-bottom: 10px; /* 下內距,只又一個間距要設定,就可以直接指定想要的位置,top是上,left是左,right是右 */
+    width: 200px;
+    margin: 0 auto;
+} 
+
+p
+{
+    
+    font-size: 30px;
+    color: #109ac0;
+    text-align: center;
+    border-bottom-style:double; /* 下邊框樣式:點虛線 */
+    border-bottom-width: 2px; /* 下邊框粗細 */
+    /* 沒有指定邊顏色,就會使用和文字一樣的顏色 */
+    padding-bottom: 10px; /* 下內距,只又一個間距要設定,就可以直接指定想要的位置,top是上,left是左,right是右 */
+    width: 200px;
+    margin: 0 auto;
+}
+a
+{
+    text-decoration: none;
+    /* 文字裝飾:不要有底線就選擇none,任何裝飾都沒有,要底線就選擇underline */
+    /* 指定標籤的樣式，就必須將標籤在HTML裡增加一個名稱的屬性，針對名稱定義樣式 */
+    /* 名稱的屬性有兩種;第一種是網頁內只能使用一次的名稱--id */
+    /* 名稱的屬性有兩種;第二種是網頁內可以重複使用或使用一次的名稱--class */
+}
+/* HTML裡面的id名稱在css裡使用#來表示 */
+/* HTML裡面的class名稱在css裡使用.來表示 */
+.link
+{
+color: #109ac0;
+border-style: solid; /* 邊框樣式:實線邊框 */
+border-width: 5px; /* 邊框粗細 */
+background-color: aliceblue;
+border-radius: 50px; /* 圓角邊框:1個數字代表4個邊都是相同的 */ 
+/* border-radius: 10px;  圓角邊框:2個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下 */ 
+/* border-radius: 10px 0 30px;  圓角邊框:3個數字用空白分隔,第1個數字代表左上和右下,第2個數字代表右上和左下,第3個數字代表右下 */ 
+/* border-radius: 10px 0 30px 50px; 圓角邊框:4個數字從左上開始,順時針依序設定右上.右下.左下 */
+padding: 20px 50px;/* 內距:邊框與內容的距離 */
+/* 設定內距之後，必須利用box-sizing把內距包含在寬高度裡，才不會影響指定的寬高 */
+box-sizing:border-box ;
+
+box-shadow: 5px 5px;/* 邊框陰影:水平距離 垂直距離 顏色 */
+display: block;/* 行內元素預設左右排列，要改成上下，只要偽裝變成塊狀元素 */
+text-align: center;
+/* 標籤裡面的文字要置中，文字是行內元素，行內元素左右置中就是在父元素設定文字對齊的方法是置中 */
+/* 每一個標籤就是一個css box框模式，有五大功能:寬度width/高度height/邊框border/外距margin/內距padding */
+width: 80%;
+max-width: 600px;
+margin: 20px auto;
+}
+/* id名稱在css裡使用#來表示*/
+#social>a>img
+{
+    width: 30px;
+     transition-property: transform; /*轉場效果套用的樣式 */
+     transition-duration: 0.5s; /*轉場效果持續時間 */
+}
+/* 樣式對象img的滑入狀態 */
+#social>a>img:hover
+{
+/* 滑入狀態裡的樣式和沒有滑入的樣式是相同的,可以省略輸入,在這裡因為寬度不變,所以不用再一次設定width */
+transform: scale(1.5);
+/* 2D變形:縮放(比例) */
+}
+#social>a
+{
+margin: 0 5px;
+/* 外距: 上下是0,左右是5px */
+}
+#social
+{
+text-align: center;
+/* 子元素a標籤是行內元素,左右置中就是父元素設定文字對齊:置中 */
+margin: 50px 0;
+
+}
